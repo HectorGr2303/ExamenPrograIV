@@ -1,0 +1,81 @@
+###
+POST http://localhost:3001/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Lil Quil",
+    "email": "quil@gmail.com",
+    "hash": "1234567",
+    "rol": "Pinocho",
+    "fechaRegistro": "2020-03-23"
+}
+
+
+###
+GET http://localhost:3001/api/users/661da85ab1844b858f79e90f HTTP/1.1
+
+###
+PUT http://localhost:3001/api/users/661daa2c9fdfc704c97326e6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Bruce Wayne",
+    "email": "bruce@gmail.com",
+    "password": "1234567",
+    "rol": "Batman"
+}
+
+###
+DELETE http://localhost:3001/api/users/661daa2c9fdfc704c97326e6 HTTP/1.1
+
+###
+POST http://localhost:3001/api/citas HTTP/1.1
+Content-Type: application/json
+
+{
+    "fechaHora": "2024-05-17T10:30:00.000Z",
+    "usuario": "60c72b3f4f502a3e8c123456",
+    "descripcion": "Viaje a la playa",
+    "estado": "pendiente"
+}
+
+###
+POST http://localhost:3001/api/vacaciones HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "60c72b3f4f502a3e8c123456",
+    "fechaInicio": "2024-06-01T00:00:00.000Z",
+    "fechaFin": "2024-06-15T00:00:00.000Z",
+    "estado": "pendiente",
+    "comentarios": "Vacaciones de verano"
+}
+
+###
+GET http://localhost:3001/api/vacaciones HTTP/1.1
+
+###
+POST http://localhost:3001/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Gokuuu",
+    "email": "goku@gmail.com",
+    "password": "hector",
+    "rol": "Saiyan",
+    "fechaRegistro": "2020-03-23"
+}
+
+###
+POST http://localhost:3001/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "pedrito@gmail.com",
+  "password": "123456"
+}
+
+
+###
+GET http://localhost:3001/api/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIxNzY3MDIxNWI0MWNiMDdhZjBkYTMiLCJpYXQiOjE3MTM0NzE3MzIsImV4cCI6MTcxMzQ3NTMzMn0.GBZYq6p6KP70bNENFKgO7JnYmUxk3YnYeLhW5TDJNHM
