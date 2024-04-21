@@ -1,3 +1,4 @@
+Para ejecutarlo es npm run start.
 Primero creé mi proyecto y lo dividí en partes, la carpeta src que contiene models, routes y views.
 Models contiene los 3 distintos modelos que se ocupaban para el examen, usuarios, citas y vacaciones.
 Instalé dependencias como express, dotenv, bcryptjs, jsonwebtoken, mongoose y nodemon.
